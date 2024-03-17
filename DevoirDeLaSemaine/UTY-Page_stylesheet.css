@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: DTM;
+    src: url("font/DTM-Mono.otf");
+
+}
+
+p, h3, li, h5 {
+    color: white;
+    font-family: DTM;
+}
+
+li {
+    padding-left: 10px;
+}
+
+/*Utilisé pour tout les titres*/
+
+h5 {
+    font-size: larger;
+}
+
+body{
+    height: 1980px;
+    background-color: black;
+}
+
+header {
+    display: block;
+    width: 60%;
+    text-align: center;
+}
+
+.banner {
+    position: inherit;
+    width: 100%;
+}
+
+.content {
+    width: 60%;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    border-radius: 6px;
+    border: 4mm ridge white;     
+}
+
+.filAriane{
+    position: inherit;
+    height: 1842px;
+    width: 15.5%;
+    padding-left: 5px;
+    padding: 1%;
+    margin: 1%;
+    background-color: black;
+    overflow: hidden;
+    border-radius: 6px;
+    border: solid white;
+}
+.texte{
+    display: inherit;
+    padding-top: 1%;
+    position: inherit;
+    width: 84.5%;
+    overflow: hidden;
+
+}
+.informations {
+    float: right;
+    height: 300px;
+    position: relative;
+    
+    margin-left: 1%;
+
+    
+}
+
+@media screen and (min-width:1000px) {
+    header{    
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}

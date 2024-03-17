@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+@font-face {
+    font-family: DTM;
+    src: url("font/DTM-Mono.otf");
+
+}
+
+body {
+    background-color: black;
+    height: 1424.75px;
+    /* width: 1080px; */
+    display: inline;
+   
+}
+
+body:hover {
+    cursor: url(images/pointer.png),auto;
+}
+
+.titre {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    background-image: linear-gradient(to right,#FF0000,#FFB000,#F7FF00, #00FF1B,#00FFFF,#4300FF,#FC00FF);
+    background-clip: text;
+    color: transparent;
+}
+
+.content {
+    position: relative;
+    top: 25px;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    height: 925.37px;
+    align-content: center;
+    width: 1000px;
+}
+
+.audioPlayer {
+    right: 0vw;
+    position: fixed;
+}
+
+.topPage { 
+    height: 46.22%;
+    display: flex; 
+}
+
+p, h3 {
+    color: white;
+    font-family: DTM;
+}
+
+/*Utilisé pour tout les titres*/
+
+h5 {
+    color: #f67f32;
+    font-family: DTM;
+    font-size: larger;
+}
+/* titre des fangames*/
+
+.title:hover {
+    cursor: pointer;
+    color: rgb(247, 255, 78);
+}
+
+/*Enlève le soulignement du lien par défaut*/
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-size: smaller;
+}
+/* logo principal du site*/
+.logo {
+    font-size: x-large;
+    font-family: DTM;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 50%;
+    margin: 1%;
+    overflow: hidden;
+    background-image: url(images/souls\ site\ logo.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Fangames-list, .FilAriane,.APropos {
+    width: 25%;
+    margin: 1%;
+    background-color: black;
+    overflow: hidden;
+    /* border-color: white; */
+    border-radius: 6px;
+    border: 4mm ridge white;
+}
+
+.APropos {
+    width: 30.725%;
+}
+
+.Fangames-list {
+    padding-top: 1%;
+}
+
+.fangame {
+    text-align: center;
+    padding-bottom: 6%;
+    display: inline-block;    
+}
+
+.fangame-icon {
+    max-width: 50px;
+    
+}
+.fangame-icon-DF {
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+.midPage {
+    height: 53%;
+    display: flex;   
+}
+.ProduitsPrincipaux {
+    margin: 1%;
+    width: fit-content;
+    overflow: hidden;
+}
+.footer {
+    
+    position: absolute;
+    margin-top: auto;
+    bottom: 1px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .content{
+        left: 0%;
+        width: 100%;
+    }
+
+    .Fangames-list, .FilAriane,.APropos, .ProduitsPrincipaux {
+        overflow: scroll;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    .content{    
+        margin-left: auto;
+        margin-right: auto;
+    } 
+}
+
+@media screen and (max-width:1635px) {
+    .audioPlayer{
+        visibility: hidden;
+    }
+}
+
